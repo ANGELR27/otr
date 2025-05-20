@@ -35,7 +35,7 @@ const CTASection: React.FC = () => {
           </div>
           
           <div className="mt-16 text-center text-cosmic-white/70">
-            <p className="mb-4">Si esta presentación interactiva  no cumple con los criterios, descraga este análisis completo en PDF.</p>
+            <p className="mb-4">Si esta presentación interactiva  no cumple con los criterios, descarga este análisis completo en PDF.</p>
             <a
               href="/El-Problema-Encontrar-Videos-Educativos-de-Calidad-en-YouTube.pdf"
               download="El Problema - Encontrar Videos Educativos de Calidad en YouTube.pdf"
