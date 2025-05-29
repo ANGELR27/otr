@@ -95,7 +95,7 @@ const FlowSection: React.FC = () => {
             </span>
           </h2>
           <p className="text-lg text-cosmic-white/80">
-            EduFinder está diseñado para ayudarte a encontrar los mejores recursos educativos en una amplia gama de temas. Estas son las características clave que lo hacen posible:
+            EduFinder ayudará a descubrir y evaluar recursos educativos de alta calidad en diversas disciplinas. A continuación:
           </p>
         </div>
 
