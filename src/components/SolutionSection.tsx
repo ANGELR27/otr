@@ -1,3 +1,4 @@
+console.log('SolutionSection.tsx module loaded');
 import React from 'react';
 
 // Iconos simples para la UI (puedes reemplazarlos con una librería de iconos si prefieres)
@@ -37,7 +38,7 @@ const SolutionSection: React.FC = () => {
     duration: 'Lista completa: +100 videos (aprox. 60-80h total). Video analizado: 25 min.', // Duración más específica
     views: 'Video analizado: +3.5M. Lista: Millones por video.', // Vistas más específicas
     // Logo del canal (Píldoras Informáticas) - URL obtenida previamente
-    channelLogoUrl: 'https://yt3.googleusercontent.com/ytc/AIdro_n0p-pyU8Gk2N4Y22q25Hn2K3N5yY_9M3qRzO2D=s176-c-k-c0x00ffffff-no-rj',
+    channelLogoUrl: '/pildora-yt.jpg', // Usando el logo desde la carpeta public
     // Miniatura del video específico (formato hqdefault)
     thumbnailUrl: 'https://i.ytimg.com/vi/U709qY6S9rA/hqdefault.jpg',
     strengths: [
@@ -60,6 +61,7 @@ const SolutionSection: React.FC = () => {
     },
   };
 
+  console.log('Debug: Channel Logo URL antes de renderizar:', courseData.channelLogoUrl);
   return (
     <section id="tecnología" className="py-20 relative overflow-hidden">
       <div className="cosmic-grid"></div>
@@ -89,9 +91,13 @@ const SolutionSection: React.FC = () => {
                 />
                 <div className="flex items-center mb-2">
                   <img 
-                    src={courseData.channelLogoUrl} // Usando la URL real del logo
-                    alt={`Logo de ${courseData.channel}`} 
+                    src={courseData.channelLogoUrl} // Usando el logo local (desde la carpeta public)
+                    alt={`Logo de ${courseData.channel}`}
                     className="w-8 h-8 rounded-full mr-2 border-2 border-cosmic-purple-light object-cover"
+                    crossOrigin="anonymous"
+                    onError={(e) => {
+                      console.error('Error al cargar el logo del canal desde /public:', (e.target as HTMLImageElement).src, e);
+                    }}
                   />
                   <h3 className="text-lg font-semibold text-cosmic-white">{courseData.channel}</h3>
                 </div>

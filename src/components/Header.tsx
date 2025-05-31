@@ -71,7 +71,7 @@ const Header: React.FC = () => {
             aria-label="Descargar PDF: El Problema de Encontrar Videos Educativos"
           >
             <Download size={18} className="mr-2" />
-            <span className="text-sm font-semibold">Descargar PDF</span>
+            <span className="text-sm font-semibold"> PDF</span>
           </a>
           <a 
             href="https://colombia.generation.org/"
