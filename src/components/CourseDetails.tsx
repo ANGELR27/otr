@@ -23,11 +23,11 @@ const CourseDetails: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-cosmic-blue-electric via-cosmic-blue-neon to-cosmic-purple-light text-transparent bg-clip-text">
-              EduFinder: Tu Guía Inteligente al Conocimiento
+              EduFinder: La App que Busca Contenido Educativo de Calidad en YouTube
             </span>
           </h2>
-          <p className="text-lg text-cosmic-white/80 max-w-3xl mx-auto">
-            EduFinder explora el vasto universo de contenido educativo por ti. Analizamos y filtramos miles de videos para que inviertas tu tiempo en aprender, no en buscar sin fin.
+          <p className="text-lg md:text-xl leading-relaxed text-gray-300 mb-8">
+            Seguramente has encontrado situaciones/dificultades en tu vida donde has pensado "si existiera una aplicación que hiciera X, ayudaría tanto a resolver Y...". Pues para esta prueba, la idea es que pienses en alguna situación/dificultad como esa (real o hipotética) y que necesite de alguna aplicación móvil (app) (y que todavía no existe) para darle solución a esa situación/dificultad.
           </p>
         </div>
 

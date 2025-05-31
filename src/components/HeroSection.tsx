@@ -46,7 +46,7 @@ const HeroSection: React.FC = () => {
               <div>
                 <h2 className="text-xl md:text-2xl font-semibold text-cosmic-blue-neon mb-2">Situación/Dificultad:</h2>
                 <p className="text-cosmic-white/80 text-base md:text-lg">
-                  Aunque YouTube es la mayor fuente de videos educativos, la mayoría de usuarios pierde tiempo buscando buenos recursos porque el algoritmo prioriza popularidad y no calidad educativa. Encontrar videos claros, completos y adaptados a lo que realmente necesitas es un reto diario.
+                  ¿Alguna vez has invertido horas buscando tutoriales o cursos en plataformas de video, solo para encontrarte con contenido que no cumple tus expectativas de calidad o profundidad? La vasta cantidad de información disponible puede ser abrumadora, y discernir entre recursos verdaderamente valiosos y aquellos superficiales o poco claros es un desafío constante que consume tiempo y esfuerzo.
                 </p>
               </div>
               <div>

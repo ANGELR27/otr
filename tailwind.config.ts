@@ -128,6 +128,38 @@ export default {
 					'0%': { strokeDashoffset: '1000' },
 					'100%': { strokeDashoffset: '0' },
 				},
+        'search-scan': {
+          '0%, 100%': { transform: 'translateX(-15%) rotate(-10deg) scale(1.05)', opacity: '0.8' },
+          '50%': { transform: 'translateX(15%) rotate(10deg) scale(1.05)', opacity: '1' },
+        },
+        'sparkle-energetic-burst': {
+          '0%, 100%': { transform: 'scale(0.9) rotate(0deg)', opacity: '0.7' },
+          '25%': { transform: 'scale(1.2) rotate(15deg)', opacity: '1' },
+          '50%': { transform: 'scale(0.8) rotate(-15deg)', opacity: '0.8' },
+          '75%': { transform: 'scale(1.1) rotate(10deg)', opacity: '0.9' },
+        },
+        'lightbulb-idea-brighten': {
+          '0%, 100%': { filter: 'brightness(100%) drop-shadow(0 0 2px transparent)', transform: 'scale(1)' },
+          '50%': { filter: 'brightness(180%) drop-shadow(0 0 8px currentColor)', transform: 'scale(1.1)' },
+        },
+        'cap-knowledge-acquire': {
+          '0%': { transform: 'translateY(0px) rotate(0deg)' },
+          '20%': { transform: 'translateY(-8px) rotate(-5deg)' },
+          '40%': { transform: 'translateY(0px) rotate(5deg)' },
+          '60%': { transform: 'translateY(-4px) rotate(-2deg)' },
+          '80%': { transform: 'translateY(0px) rotate(2deg)' },
+          '100%': { transform: 'translateY(0px) rotate(0deg)' },
+        },
+        'list-dynamic-sort': {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '25%': { transform: 'translateY(-5px) scaleY(1.05)' },
+          '50%': { transform: 'translateY(0px) scaleY(0.95)' },
+          '75%': { transform: 'translateY(3px) scaleY(1.02)' },
+        },
+        'play-button-glow-pulse': {
+          '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 3px currentColor, 0 0 5px currentColor inset' },
+          '50%': { transform: 'scale(1.12)', boxShadow: '0 0 10px currentColor, 0 0 15px currentColor inset' },
+        },
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -139,6 +171,12 @@ export default {
 				'glitch': 'glitch 0.5s ease-in-out',
 				'rotate-slow': 'rotate-slow 15s linear infinite',
 				'data-flow': 'data-flow 3s linear infinite',
+        'search-scan': 'search-scan 2.5s ease-in-out infinite alternate',
+        'sparkle-burst': 'sparkle-energetic-burst 1.8s ease-in-out infinite',
+        'lightbulb-flash': 'lightbulb-idea-brighten 1.5s ease-in-out infinite',
+        'cap-acquire': 'cap-knowledge-acquire 3s ease-in-out infinite',
+        'list-sort': 'list-dynamic-sort 2.2s ease-in-out infinite',
+        'play-throb': 'play-button-glow-pulse 1.2s ease-in-out infinite',
 			},
 			backgroundImage: {
 				'cosmic-gradient': 'linear-gradient(to bottom, #050714, #0B1037)',
