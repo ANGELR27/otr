@@ -38,7 +38,7 @@ const Header: React.FC = () => {
         
         <nav className="hidden md:flex">
           <ul className="flex space-x-6">
-            {['Misión', 'Tecnología', 'Beneficios', 'Futuro', 'Conclusión'].map((item) => (
+            {['Misión', 'Tecnología', 'Futuro', 'Conclusion'].map((item) => (
             <li key={item}>
               <a 
                 href={`#${item.toLowerCase()}`} 
@@ -94,7 +94,7 @@ const Header: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-cosmic-black/95 backdrop-blur-sm shadow-lg absolute top-full left-0 right-0 z-40">
           <ul className="flex flex-col items-center py-4 space-y-4">
-            {['Misión', 'Tecnología', 'Beneficios', 'Futuro', 'Conclusión'].map((item) => (
+            {['Misión', 'Tecnología', 'Futuro', 'Conclusion'].map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
