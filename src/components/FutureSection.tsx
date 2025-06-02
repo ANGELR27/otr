@@ -58,7 +58,7 @@ const FutureSection: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   // State for YouTube Search Demo
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState('Curso java');
   const [videoResults, setVideoResults] = useState<YouTubeVideo[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [searchError, setSearchError] = useState<string | null>(null);
@@ -67,6 +67,15 @@ const FutureSection: React.FC = () => {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(-1);
   const searchInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    // Automatically perform search for the default query on component mount
+    // Ensure handleSearch can be called without an event, or adapt if necessary.
+    // Assuming handleSearch is designed to work even if event is undefined.
+    if (searchQuery.trim() === 'Curso java') { // Optional: condition to ensure it only runs for the default
+      handleSearch();
+    }
+  }, []); // Empty dependency array ensures this runs only once after initial render
   const [nextPageToken, setNextPageToken] = useState<string | null>(null);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
 

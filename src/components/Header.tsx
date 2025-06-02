@@ -64,15 +64,17 @@ const Header: React.FC = () => {
         </div>
         
         <div className="hidden md:flex items-center space-x-3">
-          <a
-            href="/El-Problema-Encontrar-Videos-Educativos-de-Calidad-en-YouTube.pdf"
-            download="El Problema - Encontrar Videos Educativos de Calidad en YouTube.pdf"
-            className="inline-flex items-center px-3 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg text-cosmic-white"
-            aria-label="Descargar PDF: El Problema de Encontrar Videos Educativos"
+          <button
+            type="button"
+            className="p-1 rounded-full bg-gray-700 hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-cosmic-blue-neon focus:ring-opacity-50"
+            aria-label="Perfil de usuario"
           >
-            <Download size={18} className="mr-2" />
-            <span className="text-sm font-semibold"> PDF</span>
-          </a>
+            <img 
+              src="/yoo.jpg" 
+              alt="Usuario"
+              className="w-10 h-10 rounded-full object-cover border-2 border-cosmic-black/50"
+            />
+          </button>
           <a 
             href="https://colombia.generation.org/"
             target="_blank" 
