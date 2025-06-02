@@ -44,15 +44,15 @@ const HeroSection: React.FC = () => {
           <div className="max-w-3xl mx-auto bg-cosmic-black/50 p-6 md:p-8 rounded-xl shadow-2xl backdrop-blur-sm opacity-0 animate-fade-in" style={{ animationDelay: '600ms' }}>
             <div className="space-y-6 text-left">
               <div>
-                <h2 className="text-xl md:text-2xl font-semibold text-cosmic-blue-neon mb-2">Situación/Dificultad:</h2>
+                <h2 className="text-xl md:text-2xl font-semibold text-cosmic-blue-neon mb-2">Optimiza Tu Búsqueda Educativa</h2>
                 <p className="text-cosmic-white/80 text-base md:text-lg">
-                  ¿Alguna vez has invertido horas buscando tutoriales o cursos en plataformas de video, solo para encontrarte con contenido que no cumple tus expectativas de calidad o profundidad? La vasta cantidad de información disponible puede ser abrumadora, y discernir entre recursos verdaderamente valiosos y aquellos superficiales o poco claros es un desafío constante que consume tiempo y esfuerzo.
+                  Encontrar tutoriales de calidad en YouTube es un desafío. EduFinder lo simplifica, ahorrándote tiempo y esfuerzo.
                 </p>
               </div>
               <div>
-                <h2 className="text-xl md:text-2xl font-semibold text-cosmic-purple-light mb-2">Solución propuesta: <span className="text-cosmic-blue-neon">EduFinder</span></h2>
+                <h2 className="text-xl md:text-2xl font-semibold text-cosmic-purple-light mb-2">Así Funciona <span className="text-cosmic-blue-neon">EduFinder</span></h2>
                 <p className="text-cosmic-white/80 text-base md:text-lg">
-                  Una app que se conecta con la API de YouTube y utiliza IA para analizar, filtrar y rankear videos educativos. Evalúa claridad, completitud, nivel y estructura, mostrándote solo los mejores recursos según tu búsqueda y necesidades reales.
+                  Nuestra IA analiza y selecciona los mejores videos educativos, evaluando su calidad y relevancia. <strong>Más abajo, prueba nuestra demo interactiva: hemos precargado una búsqueda de "Curso java" para que explores su funcionamiento.</strong>
                 </p>
               </div>
             </div>

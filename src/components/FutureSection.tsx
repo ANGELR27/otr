@@ -321,13 +321,17 @@ const FutureSection: React.FC = () => {
                 {videoResults.map((video, index) => (
                   <div key={video.id} className="bg-cosmic-black/50 border border-cosmic-blue-neon/30 rounded-lg p-4 flex flex-col sm:flex-row gap-4 hover:border-cosmic-blue-electric/70 transition-all duration-300 shadow-lg hover:shadow-cosmic-blue-electric/20">
                     <div className="relative rounded-lg">
-                      <img src={video.thumbnailUrl} alt={video.title} className="w-full aspect-video object-cover rounded-lg" />
+                      <a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noopener noreferrer">
+                        <img src={video.thumbnailUrl} alt={video.title} className="w-full aspect-video object-cover rounded-lg" />
+                      </a>
                       <div className="absolute top-2 left-2 bg-yellow-400 text-black px-3 py-1 rounded-md text-sm font-bold shadow-lg z-10 border-2 border-cosmic-purple-light">
                         #{index + 1}
                       </div>
                     </div>
                     <div className="flex-grow">
-                      <h3 className="text-lg font-semibold text-cosmic-blue-neon mb-1 truncate" title={video.title}>{video.title}</h3>
+                      <a href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noopener noreferrer" title={video.title}>
+                        <h3 className="text-lg font-semibold text-cosmic-blue-neon mb-1 truncate hover:underline">{video.title}</h3>
+                      </a>
                       <h4 className="text-sm text-cosmic-gray-medium mb-2 truncate">
                         {video.channelTitle}
                       </h4>
@@ -411,7 +415,7 @@ const FutureSection: React.FC = () => {
               </div>
             )}
 
-            {!isLoading && nextPageToken && !isLoadingMore && (
+            {searchAttempted && videoResults.length > 0 && !isLoading && nextPageToken && !isLoadingMore && (
               <div className="text-center mt-8 mb-8">
                 <button
                   onClick={handleLoadMore}
@@ -581,7 +585,7 @@ const FutureSection: React.FC = () => {
                 
                 <h3 className="text-2xl font-bold text-cosmic-blue-neon mb-3">Planes de Estudio IA</h3>
                 <p className="text-cosmic-white/80 mb-auto">
-                  La IA analizará tus fortalezas, debilidades y objetivos para diseñar planes de estudio personalizados que optimicen tu tiempo y maximicen tu aprendizaje. Cada recurso educativo será seleccionado estratégicamente para tu desarrollo.
+                  
                 </p>
                 
                 <div className="pt-4 mt-4 border-t border-cosmic-blue-electric/10">
@@ -644,7 +648,7 @@ const FutureSection: React.FC = () => {
                 
                 <h3 className="text-2xl font-bold text-cosmic-purple-light mb-3">Rutas de Aprendizaje</h3>
                 <p className="text-cosmic-white/80 mb-auto">
-                  Navega por caminos de conocimiento optimizados que conectan múltiples recursos de forma coherente. Nuestro sistema mapeará las relaciones entre conceptos para guiarte naturalmente de principiante a experto en cualquier materia.
+                 
                 </p>
                 
                 <div className="pt-4 mt-4 border-t border-cosmic-purple-light/10">
