@@ -2,6 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Download } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 
 const Header: React.FC = () => {
@@ -64,17 +70,30 @@ const Header: React.FC = () => {
         </div>
         
         <div className="hidden md:flex items-center space-x-3">
-          <button
-            type="button"
-            className="p-1 rounded-full bg-gray-700 hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-cosmic-blue-neon focus:ring-opacity-50"
-            aria-label="Perfil de usuario"
-          >
-            <img 
-              src="/yoo.jpg" 
-              alt="Usuario"
-              className="w-10 h-10 rounded-full object-cover border-2 border-cosmic-black/50"
-            />
-          </button>
+          <TooltipProvider delayDuration={200}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <button
+                  type="button"
+                  className="group p-1 rounded-full bg-gray-700 hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-cosmic-blue-neon focus:ring-opacity-50"
+                  aria-label="Información sobre Angel Rodriguez, autor de la propuesta"
+                >
+                  <img 
+                    src="/yoo.jpg" 
+                    alt="Angel Rodriguez - Autor de la propuesta EduFinder"
+                    className="w-10 h-10 rounded-full object-cover border-2 border-cosmic-black/50 group-hover:border-cosmic-blue-electric transition-all duration-300 group-hover:drop-shadow-[0_0_6px_theme(colors.cosmic-blue-neon)]"
+                  />
+                </button>
+              </TooltipTrigger>
+              <TooltipContent
+                side="bottom"
+                align="center"
+                className="bg-cosmic-black/80 backdrop-blur-sm text-cosmic-white px-3 py-1.5 text-xs rounded-md shadow-lg border border-cosmic-purple-light/30"
+              >
+                <p>Propuesta para Generation por Angel Rodriguez</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
           <a 
             href="https://colombia.generation.org/"
             target="_blank" 
